@@ -1,11 +1,16 @@
+const pizzas = [
+    { name: 'Pepperoni', toppings: ['pepperoni'] },
+    { name: 'Vegetariana', toppings: ['grass', 'stones'] }
+];
 
-const fun = () => {
-    console.log('asdf');
+const mappedPizzas = pizzas.map(pizza => pizza.name.toUpperCase());
+
+
+const pizza2 = {
+    name: 'Inferno',
+    getName() {
+        return this.name
+    }
 };
 
-const fun2 = () => {
-    console.log('asdf');
-};
-
-
-console.log('sd TypeScript!');
+console.log(pizza2.getName());
